@@ -18,13 +18,13 @@ namespace Dynamic
         private readonly Materiali materiali;
         public Materiali Materiali { get => materiali; }
 
-        private readonly string nomer;
-        public string Nomer { get => nomer; }
+        private readonly int nomer;
+        public int Nomer { get => nomer; }
 
-        private readonly string chasi;
-        public string Chasi { get => chasi; }
+        private readonly int chasi;
+        public int Chasi { get => chasi; }
 
-        public Ktp(Paragraf paragraf, VidZanyatiya vidZanyatiya, Materiali materiali, string nomer, string chasi)
+        public Ktp(Paragraf paragraf, VidZanyatiya vidZanyatiya, Materiali materiali, int nomer, int chasi)
         {
             this.paragraf = paragraf;
             this.vidZanyatiya = vidZanyatiya;
