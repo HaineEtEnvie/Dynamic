@@ -61,7 +61,7 @@ class Program
     static ExpandoObject CreateOborudovanie()
     {
         dynamic oborudovanie = new ExpandoObject();
-        Console.Write("Введите название оборудования: ");
+        Console.Write("\nВведите название оборудования: ");
         oborudovanie.Nazvanie = Console.ReadLine() ?? "Net znach";
         Console.Write("Введите стоимость оборудования: ");
         oborudovanie.Stoimost = Console.ReadLine() ?? "Net znach";
@@ -85,12 +85,12 @@ class Program
         dynamic ktp = new ExpandoObject();
         Console.WriteLine();
         ktp.Paragraf = CreateParagraf();
-        ktp.VidZanyatiya = CreateVidZanyatiya();
+        ktp.VidZanyatiya = Convert.ToString(CreateVidZanyatiya());
         ktp.Materiali = CreateMateriali();
         Console.Write("\nВведите номер занятия: ");
-        ktp.nomer = Console.ReadLine() ?? "Net znach";
+        ktp.Nomer = Console.ReadLine() ?? "Net znach";
         Console.Write("Введите количество часов занятия: ");
-        ktp.chasi = Console.ReadLine() ?? "Net znach";
+        ktp.Chasi = Console.ReadLine() ?? "Net znach";
         return ktp;
     }
     
