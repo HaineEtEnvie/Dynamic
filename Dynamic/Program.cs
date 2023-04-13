@@ -85,7 +85,7 @@ class Program
         dynamic ktp = new ExpandoObject();
         Console.WriteLine();
         ktp.Paragraf = CreateParagraf();
-        ktp.VidZanyatiya = CreateVidZanyatiya();
+        ktp.VidZanyatiya = "Praktika";
         ktp.Materiali = CreateMateriali();
         Console.Write("\nВведите номер занятия: ");
         ktp.Nomer = Console.ReadLine() ?? "Net znach";
